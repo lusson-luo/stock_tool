@@ -16,8 +16,15 @@
 终端显示自选股票信息
 
 ```
-name      - now      - max_today      - min_today   
+name      - now      - max_today      - min_today
 中兴       - 32.14    - 33.41         32
+```
+
+命令后可接参数`income`，如果接`income`，则可以打印出设置的买入价格和目前收益。
+
+```
+name      - now      - max_today      - min_today   - buy_price   - income
+中兴       - 32.14    - 33.41         32              28.40         1200
 ```
 
 #### 阀值告警
