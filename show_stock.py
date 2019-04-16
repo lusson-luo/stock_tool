@@ -10,8 +10,6 @@ stocks = [
     {"code":"sh000016","name":"上证50"}
 ]
 
-print(f"show_income : {show_income}")
-
 if 'income' == show_income :
     print("name      - now      - max_today      - min_today      - buy_price     - income")
 else :
