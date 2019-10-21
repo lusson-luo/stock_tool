@@ -10,8 +10,10 @@ show_income = "";
 if len(sys.argv) > 1: 
     show_income = sys.argv[1]
 
+# {"code":"sz000063","name":"中兴通讯","buy_price":32.4,"buy_num":300,"hope_buy_price":29,"hope_sell_price":36}
+
 stocks = [
-    {"code":"sz000063","name":"中兴通讯","buy_price":29.7,"buy_num":900,"hope_buy_price":25.5,"hope_sell_price":38},
+    {"code":"sz000063","name":"中兴通讯"},
     {"code":"sh000016","name":"上证50"}
 ]
 

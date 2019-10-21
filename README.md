@@ -71,3 +71,9 @@ python3 stock_alarm.py
 终端输入`crontab -e`设置定时任务，输入`*/3 9-12,13-15 * * 1-5 /usr/local/bin/python3 /$path/stock/stock_alarm.py`，定时周期为3分钟一次，在周一到周五9-12，13-15点时执行。
 
 注意python3路径是本机安装的python3的绝对路径，不知道自己python3路径的可以通过`which python3`来查看路径。
+
+### 新规划
+
+支持腾讯内网，支持windows
+
+腾讯股票APIhttp://qt.gtimg.cn/q=sh600519，解析教程：https://blog.csdn.net/xcxzzx01/article/details/79589012
