@@ -28,16 +28,16 @@ def monitor(stock):
 		openPriceYesterday = stockData[2]
 		zf = Decimal(100*((float(priceNow)-float(openPriceYesterday))/float(openPriceYesterday))).quantize(Decimal("0.00"))
 		if float(stock['min_threshold']) > float(priceNow):		
-			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价跌破设定的最小值{stock['min_threshold']},现在价格为{priceNow}".encode('gb2312'),f"{stock['name']}股价下跌提醒".encode('gb2312'),0)
+			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价跌破设定的最小值{stock['min_threshold']},现在价格为{priceNow}".encode('gb2312'),f"{stock['name']}股价下跌提醒".encode('gb2312'),4096)
 			break
 		if float(stock['max_threshold']) < float(priceNow):
-			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价突破设定的最大值{stock['max_threshold']},现在价格为{priceNow}".encode('gb2312'),f"{stock['name']}股价上涨提醒".encode('gb2312'),0)
+			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价突破设定的最大值{stock['max_threshold']},现在价格为{priceNow}".encode('gb2312'),f"{stock['name']}股价上涨提醒".encode('gb2312'),4096)
 			break
 		if zf < stock['min_range']:
-			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价下跌超过了{stock['min_range']}%,现在价格为{priceNow},下跌了{zf}%".encode('gb2312'),f"{stock['name']}股价当天涨跌幅提醒".encode('gb2312'),0)
+			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价下跌超过了{stock['min_range']}%,现在价格为{priceNow},下跌了{zf}%".encode('gb2312'),f"{stock['name']}股价当天涨跌幅提醒".encode('gb2312'),4096)
 			break
 		if zf > stock['max_range']:
-			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价上涨超过了{stock['max_range']}%,现在价格为{priceNow},上涨了{zf}%".encode('gb2312'),f"{stock['name']}股价当天涨跌幅提醒".encode('gb2312'),0)
+			ctypes.windll.user32.MessageBoxA(0,f"{stock['name']}股价上涨超过了{stock['max_range']}%,现在价格为{priceNow},上涨了{zf}%".encode('gb2312'),f"{stock['name']}股价当天涨跌幅提醒".encode('gb2312'),4096)
 			break
 for ind, stock in enumerate(stocks):
 	if stock.__contains__('min_threshold') and stock.__contains__('max_threshold'):
