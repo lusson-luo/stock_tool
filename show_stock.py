@@ -13,7 +13,10 @@ if len(sys.argv) > 1:
 # {"code":"sz000063","name":"中兴通讯","buy_price":32.4,"buy_num":300,"hope_buy_price":29,"hope_sell_price":36}
 
 stocks = [
-    {"code":"sz000063","name":"中兴通讯"},
+    {"code":"sz000063","name":"中兴通讯","hope_buy_price":29,"hope_sell_price":37},
+    {"code":"sh600276","name":"恒瑞医药","hope_buy_price":80,"hope_sell_price":''},
+    {"code":"sh600036","name":"招商银行","hope_buy_price":35,"hope_sell_price":''},
+    {"code":"sz000002","name":"万科 A","hope_buy_price":26,"hope_sell_price":''},
     {"code":"sh000016","name":"上证50"}
 ]
 
