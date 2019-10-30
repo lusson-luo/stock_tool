@@ -17,6 +17,7 @@ stocks = [
     {"code":"sh600276","name":"恒瑞医药","hope_buy_price":80,"hope_sell_price":''},
     {"code":"sh600036","name":"招商银行","hope_buy_price":35,"hope_sell_price":''},
     {"code":"sz000002","name":"万科 A","hope_buy_price":26,"hope_sell_price":''},
+    {"code":"sz000538","name":"云南白药","hope_buy_price":80,"hope_sell_price":''},
     {"code":"sh000016","name":"上证50"}
 ]
 
