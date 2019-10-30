@@ -3,8 +3,8 @@ import sys
 import time
 from decimal import Decimal
 
-print("不做短期买入卖出的韭菜操作，\033[31m跳出周期操作股票\033[0m，等待3秒出股票价格")
-print("\033[31m安心工作学习，技术才是赚钱根本\033[0m \n")
+print("不做短期买入卖出的韭菜操作，跳出周期操作股票，等待3秒出股票价格")
+print("安心工作学习，技术才是赚钱根本 \n")
 time.sleep(3)
 
 show_income = "";
