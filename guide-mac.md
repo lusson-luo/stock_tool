@@ -41,7 +41,7 @@ python3 stock_alarm.py
 
 如下显示
 
-![image-20190412220908534](stock_notify.png)
+![image-20190412220908534](resources/stock_notify.png)
 
 **设置系统定时任务**
 
