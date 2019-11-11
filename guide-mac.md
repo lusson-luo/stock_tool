@@ -48,3 +48,7 @@ python3 stock_alarm.py
 终端输入`crontab -e`设置定时任务，输入`*/3 9-12,13-15 * * 1-5 /usr/local/bin/python3 /$path/stock/stock_alarm.py`，定时周期为3分钟一次，在周一到周五9-12，13-15点时执行。
 
 注意python3路径是本机安装的python3的绝对路径，不知道自己python3路径的可以通过`which python3`来查看路径。
+
+设置好后，输入`crontab -l`查看定时任务列表.
+
+如果报错`crontab: "/usr/bin/vi" exited with status 1`，意思是系统没有安装vi编辑器，需要把默认编辑器改成vim即可，在`～/.bash_profile`加上`export EDITOR=vim`，重写设置定时任务。
