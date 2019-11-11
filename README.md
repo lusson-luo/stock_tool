@@ -38,19 +38,19 @@ name      - now      - max_today      - min_today   - buy_price   - income
 
 **实际效果**
 
-![image-20191023173110357](/Users/marx_luo/PythonWorkspace/stock/resources/stock.png)
+![image-20191023173110357](resources/stock.png)
 
 #### 阀值告警
 
 当股票价格高于设定阀值，调用mac系统通知。
 
-![image-20190402175537291](stock_notify.png)
+![image-20190402175537291](resources/stock_notify.png)
 
 ### 安装使用教程
 
-[mac版本](guide-mac)
+[mac版本](guide-mac.md)
 
-[win版本](guide-win)
+[win版本](guide-win.md)
 
 ### 新规划
 
