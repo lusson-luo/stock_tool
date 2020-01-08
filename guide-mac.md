@@ -7,7 +7,7 @@
 
 #### 设置查看实时股票
 
-下载项目后后，终端进入对应文件夹，将`stock_data.json.example`复制一份并重命名为`stock_data.json`, 执行`python3 show_stock.py`，看它是否打印
+下载项目后，终端进入对应文件夹，将`stock_data.json.example`复制一份并重命名为`stock_data.json`, 执行`python3 show_stock.py`，看它是否打印
 
 > name      - now      - max_today      - min_today
 > 中兴通讯    30.260    31.000         30.100
