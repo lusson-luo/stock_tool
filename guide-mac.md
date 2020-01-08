@@ -7,13 +7,13 @@
 
 #### 设置查看实时股票
 
-下载文件后，终端进入对应文件夹，执行`python3 show_stock.py`，看它是否打印
+下载项目后，终端进入对应文件夹，将`stock_data.json.example`复制一份并重命名为`stock_data.json`, 执行`python3 show_stock.py`，看它是否打印
 
 > name      - now      - max_today      - min_today
 > 中兴通讯    30.260    31.000         30.100
 > 上证50    2920.5151    2933.4463         2903.2682
 
-修改自己的自选股票，在`show_stock.py`中stockNos和stockNames的数组中添加自选股票code和股票名称。
+修改自己的自选股票，在`stock_data.json`中的`show_data`添加股票名和code。
 
 **配置快捷命令**
 
