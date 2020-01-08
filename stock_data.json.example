@@ -1,0 +1,23 @@
+{
+    "alarm_data": [
+        {
+            "code": "sz000063",
+            "name": "中兴通讯",
+            "min_threshold": 32,
+            "max_threshold": 38
+        }
+    ],
+    "show_data": [
+        {
+            "code": "sz300750",
+            "name": "宁德时代",
+            "hope_buy_price": 95,
+            "hope_sell_price": 200,
+            "buy_price": 0
+        },
+        {
+            "code": "sh000016",
+            "name": "上证50"
+        }
+    ]
+}
