@@ -1,5 +1,7 @@
 import json
+import os
 
+stockDataFiletPath = os.path.abspath(os.path.dirname(__file__)) + "/stock_data.json"
 
 class Stock:
     name = ""
@@ -20,7 +22,7 @@ class Stock:
         self.buy_price = buy_price
 
 def getShowData():
-    with open("stock_data.json", 'r') as load_f:
+    with open(stockDataFiletPath, 'r') as load_f:
         load_dict = json.load(load_f)
         stocks = map(lambda stock: Stock(stock['name'],
                 stock['code'],                             
@@ -35,7 +37,7 @@ def getShowData():
 
 
 def getAlarmData():
-    with open("stock_data.json", 'r') as load_f:
+    with open(stockDataFiletPath, 'r') as load_f:
         load_dict = json.load(load_f)
         stocks = map(lambda stock: Stock(stock['name'],
                 stock['code'],                             
