@@ -16,7 +16,10 @@ cp stock_data.json.example stock_data.json
 
 在stock_data.json的alarm_data中添加告警数据。
 
-**或者手动执行一下步骤**
+
+下面是手动执行操作，用于排错或了解原理的。
+
+**如果想手动执行一下步骤**
 
 > 手动执行步骤可以方便发现错误发现在哪一步，对于不能执行`./start-alarm.sh`的情况下使用。
 
