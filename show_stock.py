@@ -22,7 +22,9 @@ elif '-d' == show_type:
 else:
     print("name      - now      - 抄底价格      - 收网价格")
 for ind, stock in enumerate(stocks):
-    response = str(urllib.request.urlopen(f"http://hq.sinajs.cn/list={stock.code}").read())
+    headers = {'referer': 'http://finance.sina.com.cn'}
+    req = urllib.request.Request(f"http://hq.sinajs.cn/list={stock.code}",None, headers)
+    response = str(urllib.request.urlopen(req).read())
     stockData = response.split("\"")[1].split(",")
     stockName = stockData[0]
     openPrice = stockData[1]
